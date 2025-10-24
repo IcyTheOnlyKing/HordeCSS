@@ -46,12 +46,12 @@ body, input, select, textarea, .inProgress {
     font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     font-size: 13px;
     line-height: 1.6;
-    color: var(--tw-slate-900);
+    color: #1f2d3d;
 }
 
 /* Body Hintergrund & Padding */
 body {
-    background: linear-gradient(180deg, var(--surface) 0%, var(--surface-muted) 100%);
+    background: linear-gradient(180deg, #f3f8ff 0%, #e5efff 100%);
     margin: 0;
     padding: 0;
     color: var(--tw-slate-900);
@@ -61,30 +61,29 @@ body {
 
 /* Inputs, Selects, Textareas modern stylen */
 input, select, textarea {
-    border: 1px solid var(--border-strong);
-    border-radius: 0.75rem;
-    padding: 0.6rem 0.85rem;
-    background-color: var(--surface-contrast);
-    color: var(--tw-slate-900);
-    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    border: 1px solid #b6c9e7;
+    border-radius: 8px;
+    padding: 9px 14px;
+    background-color: #ffffff;
+    color: #1f2d3d;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
     font-size: 14px;
     box-shadow: 0 1px 2px var(--shadow-soft);
 }
 
 /* Fokus-Effekt für Inputs */
 input:focus, select:focus, textarea:focus {
-    border-color: var(--tw-blue-500);
-    box-shadow: 0 0 0 3px var(--shadow-focus);
-    background-color: var(--surface);
+    border-color: #2f7bff;
+    box-shadow: 0 0 0 3px rgba(47,123,255,0.2);
     outline: none;
 }
 
 /* Klasse .inProgress für Statusanzeigen */
 .inProgress {
-    background-color: var(--tw-blue-100);
-    color: var(--tw-blue-700);
-    padding: 6px 12px;
-    border-radius: 9999px;
+    background-color: #e8f1ff;
+    color: #2157a6;
+    padding: 6px 10px;
+    border-radius: 6px;
     font-size: 0.9em;
     font-weight: 600;
 }
@@ -133,32 +132,28 @@ br.spacer {
 }
 
 .box {
-    padding: 0.75rem;
-    border: 1px dashed var(--border-strong);
-    background: var(--surface-contrast);
-    border-radius: 0.75rem;
-    box-shadow: 0 8px 20px var(--shadow-soft);
+    padding: 3px;
+    border: 1px dashed #98b3df;
+    background: #ffffff;
 }
 .solidbox {
-    border: 1px solid var(--tw-blue-500);
-    box-shadow: 0 10px 24px var(--shadow-strong);
+    border: 1px solid #4a6fb5;
 }
 .greybox {
-    border: 1px solid var(--tw-blue-500);
-    background: var(--surface-soft);
+    border: 1px solid #4a6fb5;
+    background: #f0f4ff;
 }
 .headerbox {
-    border: 1px solid var(--border-strong);
+    border: 1px solid #a8c2ed;
     border-top-width: 0;
-    background: rgba(255,255,255,0.9);
-    backdrop-filter: blur(6px);
+    background: rgba(255,255,255,0.95);
     vertical-align: top;
 }
 .headerbox form {
     padding: 2px;
 }
 .header {
-    background: linear-gradient(135deg, var(--tw-blue-900) 0%, var(--tw-blue-500) 100%);
+    background: linear-gradient(90deg, #1f4b99 0%, #2f7bff 100%);
     text-align: left;
     font-weight: 700;
     font-size: 140%;
@@ -169,34 +164,28 @@ br.spacer {
     box-shadow: 0 8px 16px var(--shadow-soft);
 }
 .header a:hover, a.header:hover {
-    color: var(--tw-blue-100);
+    color: #dce8ff;
 }
 .header img {
     vertical-align: bottom;
 }
 .header input, .header select {
     font-size: 80%;
-    border-color: rgba(255,255,255,0.45);
-    background-color: rgba(255,255,255,0.16);
+    border-color: rgba(255,255,255,0.4);
+    background-color: rgba(255,255,255,0.15);
     color: #f3f7ff;
-    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);
 }
 .header .smallheader input, .header .smallheader select, .header .smallheader .button {
     font-size: 89%;
-    border-color: rgba(255,255,255,0.45);
+    border-color: rgba(255,255,255,0.4);
     background-color: rgba(255,255,255,0.18);
     color: #f3f7ff;
-    box-shadow: inset 0 0 0 1px rgba(15,23,42,0.1);
 }
 .header .button, .header .smallheader .button {
     font-size: 72%;
-    border: 1px solid rgba(255,255,255,0.5);
-    background: linear-gradient(135deg, rgba(255,255,255,0.28) 0%, rgba(255,255,255,0.1) 100%);
+    border-color: rgba(255,255,255,0.4);
+    background-color: rgba(255,255,255,0.2);
     color: #ffffff;
-    border-radius: 999px;
-    padding: 4px 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
 }
 
 .nowrap {
@@ -209,21 +198,21 @@ br.spacer {
 }
 
 a {
-    color: var(--tw-blue-700);
+    color: #1f6feb;
     cursor: pointer;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 a:hover {
-    color: var(--tw-blue-500);
+    color: #14479e;
     text-decoration: underline;
 }
 
 .selected {
-    background: linear-gradient(135deg, var(--tw-blue-100) 0%, var(--tw-blue-200) 100%);
+    background: #c9ddff;
 }
 .selected-over {
-    background: linear-gradient(135deg, rgba(59,130,246,0.18) 0%, rgba(191,219,254,0.35) 100%);
+    background: #d7e8ff;
 }
 
 /* Table styles. */
@@ -237,21 +226,20 @@ ul.linedRow {
     list-style-type: none;
 }
 .linedRow, tr.linedRow td, table.linedRow td, ul.linedRow li {
-    color: var(--tw-slate-900);
-    background: var(--surface-contrast);
-    border-bottom: 1px solid var(--border-subtle);
-    transition: background-color 0.2s ease;
+    color: #1f2d3d;
+    background: #ffffff;
+    border-bottom: 1px solid #c6d5ee;
 }
 table.linedRow, ul.linedRow {
     border-bottom: none;
 }
 .linedRowSelectedCol, td.linedRowSelectedCol, table.linedRow td.linedRowSelectedCol {
-    color: var(--tw-slate-900);
-    background: var(--tw-blue-100);
-    border-bottom: 1px solid var(--border-subtle);
+    color: #1f2d3d;
+    background: #edf3ff;
+    border-bottom: 1px solid #c6d5ee;
 }
 .selectedRow, tr.selectedRow td, .selectedRow a {
-    background: linear-gradient(135deg, var(--tw-blue-900) 0%, var(--tw-blue-700) 100%);
+    background-color: #1f4b99;
     color: #ffffff;
 }
 table.nopadding td, table.nopadding th {
@@ -343,13 +331,13 @@ table.horde-table thead .horde-split-right.sortdown {
 
 /* Alternating styles. */
 .striped, .rowEven {
-    background-color: var(--surface-soft);
+    background-color: #f1f6ff;
 }
 .rowOdd {
-    background-color: var(--tw-blue-100);
+    background-color: #e3edff;
 }
 .striped.hover .rowEven:hover, .striped.hover .rowOdd:hover {
-    background: linear-gradient(135deg, rgba(59,130,246,0.18) 0%, rgba(59,130,246,0.05) 100%);
+    background: #c1d9ff;
 }
 
 .smallheader {
@@ -367,10 +355,9 @@ small, .small {
     font-size: 80%;
 }
 .control {
-    color: var(--tw-slate-900);
-    background: linear-gradient(135deg, rgba(219,234,254,0.8) 0%, rgba(148,197,255,0.35) 100%);
-    padding: 0.75rem 1rem;
-    border-radius: 0.75rem;
+    color: #1f2d3d;
+    background: #e6efff;
+    padding: 6px 8px;
 }
 .accessKey {
     text-decoration: underline;
