@@ -17,43 +17,43 @@
 
 /* Globale Schrift und Grundformatierung */
 body, input, select, textarea, .inProgress {
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-size: 12px;
-    line-height: 1.5;
-    color: #333333;       /* dunkles Grau statt hartem Schwarz */
+    font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #1f2d3d;
 }
 
 /* Body Hintergrund & Padding */
 body {
-    background-color: #f5f7fa;  /* modernes Hellgrau-Blau */
+    background: linear-gradient(180deg, #f3f8ff 0%, #e5efff 100%);
     margin: 0;
     padding: 0;
 }
 
 /* Inputs, Selects, Textareas modern stylen */
 input, select, textarea {
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    padding: 8px 12px;
+    border: 1px solid #b6c9e7;
+    border-radius: 8px;
+    padding: 9px 14px;
     background-color: #ffffff;
-    color: #333;
-    transition: border-color 0.2s, box-shadow 0.2s;
+    color: #1f2d3d;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
     font-size: 14px;
 }
 
 /* Fokus-Effekt für Inputs */
 input:focus, select:focus, textarea:focus {
-    border-color: #0b3d91;
-    box-shadow: 0 0 0 2px rgba(11,61,145,0.2);
+    border-color: #2f7bff;
+    box-shadow: 0 0 0 3px rgba(47,123,255,0.2);
     outline: none;
 }
 
 /* Klasse .inProgress für Statusanzeigen */
 .inProgress {
-    background-color: #fff3cd;
-    color: #856404;
-    padding: 4px 8px;
-    border-radius: 4px;
+    background-color: #e8f1ff;
+    color: #2157a6;
+    padding: 6px 10px;
+    border-radius: 6px;
     font-size: 0.9em;
 }
 
@@ -102,27 +102,27 @@ br.spacer {
 
 .box {
     padding: 3px;
-    border: 1px dashed #999;
-    background: #fff;
+    border: 1px dashed #98b3df;
+    background: #ffffff;
 }
 .solidbox {
-    border: 1px solid #000;
+    border: 1px solid #4a6fb5;
 }
 .greybox {
-    border: 1px solid #000;
-    background: #e9e9e9;
+    border: 1px solid #4a6fb5;
+    background: #f0f4ff;
 }
 .headerbox {
-    border: 1px solid #a6b0b1;
+    border: 1px solid #a8c2ed;
     border-top-width: 0;
-    background: #fff;
+    background: rgba(255,255,255,0.95);
     vertical-align: top;
 }
 .headerbox form {
     padding: 2px;
 }
 .header {
-    background: url("graphics/tabset.png") repeat-x;
+    background: linear-gradient(90deg, #1f4b99 0%, #2f7bff 100%);
     text-align: left;
     font-weight: bold;
     font-size: 140%;
@@ -130,19 +130,28 @@ br.spacer {
     min-height: 21px;
 }
 .header a:hover, a.header:hover {
-    color: #333;
+    color: #dce8ff;
 }
 .header img {
     vertical-align: bottom;
 }
 .header input, .header select {
     font-size: 80%;
+    border-color: rgba(255,255,255,0.4);
+    background-color: rgba(255,255,255,0.15);
+    color: #f3f7ff;
 }
 .header .smallheader input, .header .smallheader select, .header .smallheader .button {
     font-size: 89%;
+    border-color: rgba(255,255,255,0.4);
+    background-color: rgba(255,255,255,0.18);
+    color: #f3f7ff;
 }
 .header .button, .header .smallheader .button {
     font-size: 72%;
+    border-color: rgba(255,255,255,0.4);
+    background-color: rgba(255,255,255,0.2);
+    color: #ffffff;
 }
 
 .nowrap {
@@ -155,19 +164,20 @@ br.spacer {
 }
 
 a {
-    color: #36525d;
+    color: #1f6feb;
     cursor: pointer;
     text-decoration: none;
 }
 a:hover {
+    color: #14479e;
     text-decoration: underline;
 }
 
 .selected {
-    background: #bbcbff;
+    background: #c9ddff;
 }
 .selected-over {
-    background: #cef;
+    background: #d7e8ff;
 }
 
 /* Table styles. */
@@ -181,21 +191,21 @@ ul.linedRow {
     list-style-type: none;
 }
 .linedRow, tr.linedRow td, table.linedRow td, ul.linedRow li {
-    color: #000;
-    background: #fff;
-    border-bottom: 1px solid #d0d0d0;
+    color: #1f2d3d;
+    background: #ffffff;
+    border-bottom: 1px solid #c6d5ee;
 }
 table.linedRow, ul.linedRow {
     border-bottom: none;
 }
 .linedRowSelectedCol, td.linedRowSelectedCol, table.linedRow td.linedRowSelectedCol {
-    color: #000;
-    background: #f3f3f3;
-    border-bottom: 1px solid #d0d0d0;
+    color: #1f2d3d;
+    background: #edf3ff;
+    border-bottom: 1px solid #c6d5ee;
 }
 .selectedRow, tr.selectedRow td, .selectedRow a {
-    background-color: #36525d;
-    color: #fff;
+    background-color: #1f4b99;
+    color: #ffffff;
 }
 table.nopadding td, table.nopadding th {
     padding: 0;
@@ -287,13 +297,13 @@ table.horde-table thead .horde-split-right.sortdown {
 
 /* Alternating styles. */
 .striped, .rowEven {
-    background-color: #eee;
+    background-color: #f1f6ff;
 }
 .rowOdd {
-    background-color: #ddd;
+    background-color: #e3edff;
 }
 .striped.hover .rowEven:hover, .striped.hover .rowOdd:hover {
-    background: #bbcbff;
+    background: #c1d9ff;
 }
 
 .smallheader {
@@ -311,9 +321,9 @@ small, .small {
     font-size: 80%;
 }
 .control {
-    color: #000;
-    background: #ebeff0;
-    padding: 5px;
+    color: #1f2d3d;
+    background: #e6efff;
+    padding: 6px 8px;
 }
 .accessKey {
     text-decoration: underline;
